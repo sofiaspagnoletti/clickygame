@@ -6,11 +6,10 @@ function ImgCard(props) {
     <div className="card">
       <div className="content">
         <div className="img-container img-thumbnail">
-          <img alt={props.name} src={props.image} />
+          <img alt={props.name} src={props.image} onClick={() => props.onClick(props.id)} />
         </div>
       </div>
     </div>
   );
 }
-
 export default ImgCard;

@@ -6,7 +6,16 @@ import "./App.css";
 // import { finished } from "stream";
 
 class App extends React.Component {
-  state = { pets }
+  state = { 
+    pets,
+    clicked: [],
+    score: 0,
+    highScore: 0,
+  }
+
+  imgClicked = (petId) => {
+    
+  }
 
   render() {
     return (
@@ -18,6 +27,7 @@ class App extends React.Component {
             id={pet.id}
             name={pet.name}
             image={pet.image}
+            onClick={this.imgClicked}
           />
         ))}
       </Wrapper>
