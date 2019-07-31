@@ -37,6 +37,7 @@ class App extends React.Component {
         this.setState({ highScore: this.state.score });
       }
       this.setState({ score: 0 });
+      alert(`Your score: ${this.state.score}. Try again!`)
     }
   }
 
