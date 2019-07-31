@@ -43,7 +43,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className="container">
+      <div>
         <Navbar 
           score={this.state.score}
           highScore={this.state.highScore}

@@ -1,0 +1,10 @@
+.jumbotron {
+    margin-top: 4%;
+    letter-spacing: 4px;
+    font-weight: bold;
+    background-image: url("https://images.pexels.com/photos/131634/pexels-photo-131634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
