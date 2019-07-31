@@ -3,11 +3,9 @@ import "./style.css";
 
 function Navbar(props) {
     return (
-        <nav className="navbar navbar-default navbar-fixed-top">
-            <ul>
-                <li className="score">Score: {props.score}</li>
-                <li className="highScore">Highscore: {props.highScore}</li>
-            </ul>
+        <nav class="navbar navbar-light navbar-fixed-top bg-light">
+          <span class="offset-9 navbar-brand mb-0 h1">Score: {props.score}</span>
+          <span class="navbar-brand mb-0 h1">Highscore: {props.highScore}</span>
         </nav>
     );
 }

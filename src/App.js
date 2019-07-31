@@ -43,22 +43,24 @@ class App extends React.Component {
 
   render () {
     return (
-      <Wrapper>
+      <div className="container">
         <Navbar 
           score={this.state.score}
           highScore={this.state.highScore}
         />
         <Jumbotron />
-        {this.state.pets.map((pet, index) => (
-          <ImgCard
-            key={index}
-            id={pet.id}
-            name={pet.name}
-            image={pet.image}
-            onClick={this.imgClicked}
-          />
-        ))}
-      </Wrapper>
+        <Wrapper>
+          {this.state.pets.map((pet, index) => (
+            <ImgCard
+              key={index}
+              id={pet.id}
+              name={pet.name}
+              image={pet.image}
+              onClick={this.imgClicked}
+            />
+          ))}
+        </Wrapper>
+      </div>
     );
   }
 }
